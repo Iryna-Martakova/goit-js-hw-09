@@ -16,3 +16,76 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+
+.gallery {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: calc(360px * 3 + 24px *2);
+  margin: auto;
+}
+
+.feedback-form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  gap: 8px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;  
+}
+
+input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  min-width: 328px;
+  height: 24px;
+  padding: 8px 16px;
+}
+
+textarea {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  max-width: 328px;
+  min-height: 80px;
+  resize: none;
+  padding: 8px 16px;
+}
+
+button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  background: #4e75ff;
+  color: #fff;
+  border-color: transparent;
+}
+
+input:hover,
+textarea:hover {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #000;
+}
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+  outline: none;
+  border: 1px solid #808080;
+  box-shadow: none;
+}
+
+button:hover {
+  background: #6c8cff;
+}
